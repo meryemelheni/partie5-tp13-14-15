@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whoami
+spec:
+  template:
+    spec:
+      containers:
+      - name: whoami
+        resources:
+          limits:
+            memory: 128Mi
+          requests:
+            memory: 64Mi
